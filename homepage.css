@@ -144,16 +144,7 @@ body {
     
   }
 
-.program_card {
- width: 20%;
- height: 100%;
- margin: 0 auto;
- background-color: #516375;
- border-radius: 8px;
- /* z-index: 1; */
  
- 
-}
 
 .program_name {
  display: flex;
@@ -359,11 +350,11 @@ display: block;
 /* section 5 */
 
 .sec-05 {
-  width: 80%;
+  width: 90%;
   height: 100%; 
   background-color : #ffffff;
   color: #000;
-  margin: 10%;
+  margin: 3%;
   /* padding: 2%; */
   /* flex-direction: row; */
   /* display: flex; */
@@ -437,6 +428,7 @@ height: 85%;  width: 100%; object-fit: contain;
   transform-style: preserve-3d;
   cursor: pointer;
 }
+
 
 .agenda-Card:hover .agenda-innerCard {
   transform: rotateY(180deg);
@@ -1037,6 +1029,8 @@ margin-left: 10%;
   transition: 0.2s ease-in-out;
 }
 
+
+
 /* .home-btn-container{
   margin-left: 85%;
   margin-top: -10%;
@@ -1127,7 +1121,7 @@ height: 50px;
 }
 
 .agenda-title {
-  font-size: 1.5em;
+  font-size: 18px;
   font-weight: 900;
   text-align: center;
   margin: 0;
@@ -1143,6 +1137,7 @@ height: 50px;
   transform-style: preserve-3d;
   cursor: pointer;
 }
+
 
 .surprise-session-page{
   
@@ -1228,12 +1223,143 @@ height: 50px;
 
 @media (max-width:1230px){
 
+  .program_card_container {
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    /* margin-left: 13%; */
+    gap: 1%;
+    height: 30%;
+    
+  }
 }
 
 
 
-@media (max-width:960px){
+@media (max-width:1110px){
 
+  .sec-05 .session-1st-row {
+    display: flex;
+    width: 100%;
+    height: 50%; 
+    background-color : #ffffff;
+    color: #000;
+    /* padding: 2%; */
+    gap: 5%;
+    justify-content: center;
+  }
+  
+  
+  .sec-05 .session-2nd-row{
+    display: flex;
+    width: 100%;
+    height: 50%; 
+    background-color : #ffffff;
+    color: #000;
+    margin-top: 5%;
+    /* padding-bottom: 4%; */
+    gap: 5%;
+    justify-content: center;
+  }
+    
+  .agenda-Card {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    margin-top: 5%;
+    /* perspective: 1000px; */
+  }
+  
+  .agenda-title {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .agenda-innerCard {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+
+  .quantity-container{
+    display: flex;
+    color: #232323;
+    width: 90%;
+    margin-top: 5%;
+  }
+  .quantity-container .quantity-card .quantity-num p{
+    font-size: 40px;
+  
+  }
+  .quantity-container .quantity-card .quantity-name p {
+    font-size: 8px;
+    /* text-align: center; */
+    text-transform: uppercase;
+    margin-top: 3%;
+  }
+  .sec-06 .footer-container-- img {
+    width: 100px;
+    height: 100px;
+   }
+    .below-speaker-text{
+      font-size: 22px;
+    }
+
+    .program_card_container {
+      display: block;
+      width: 70%;
+      margin-top: 5%;
+      margin-left: 15%;
+      
+    }
+
+
+    .home-speaker-banner{
+      font-size: 35px;
+    }
+    
+    .home-speaker-container{
+      height: 100%;
+      width: 100%;
+      font-size: 30px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      background-color: #232323;
+      justify-content: center
+      /* margin-left: ; */
+    }
+    
+    /* home speaker */
+    .home-speaker-card {
+      width: 60%;
+      height: 400px;
+      background: #313131;
+      border-radius: 20px;
+      margin-left: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* justify-content: s; */
+      margin-bottom: 2%;
+      color: white;
+      transition: 0.2s ease-in-out;
+    }
+    
+    .home-speaker-card img{
+      width: 60%;
+      height: 400px;
+      transition: 0.2s ease-in-out;
+    }
+    
+    
 }
 
 
