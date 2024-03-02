@@ -519,28 +519,28 @@ text-align: justify;
   animation: animate 5s linear infinite;
 }
 .ses1{
-  background-image: url("images/Pictures for Design/Musculoskeleton.png");
-  background-size:cover;
-  background-position: center;
-}.ses2{
-  background-image: url("images/Pictures for Design/softsense2.png");
-  background-size:cover;
-  background-position: center;
-}.ses3{
-  background-image: url("images/Pictures for Design/industry.jpg");
-  background-size:cover;
-  background-position: center;
-}.ses4{
   background-image: url("images/Pictures for Design/rehab.jpg");
   background-size:cover;
   background-position: center;
+}.ses2{
+  background-image: url("images/Pictures for Design/Musculoskeleton.png");
+  background-size:cover;
+  background-position: center;
+}.ses3{
+  background-image: url("images/Pictures for Design/bio\ mimic.png");
+  background-size:cover;
+  background-position: center;
+}.ses4{
+  background-image: url("images/Pictures for Design/neuro.png");
+  background-size:cover;
+  background-position: center;
 }.ses5{
-  background-image: url("images/Pictures for Design/bio_inspi.jpg");
+  background-image: url("images/Pictures for Design/hmi.jpg");
   background-size:cover;
   background-position: center;
 }
 .ses6{
-  background-image: url("images/Pictures for Design/hmi.jpg");
+  background-image: url("images/Pictures for Design/");
   background-size:cover;
   background-position: center;
 }
@@ -811,17 +811,17 @@ padding-left: 5%;
   margin-left: 35%;
   /* margin: 2%; */
   --width: 10%;
-  --height: 35px;
-  --tooltip-height: 35px;
-  --tooltip-width: 90px;
-  --gap-between-tooltip-to-button: 18px;
-  --button-color: #232323;
+  --height: 5%;
+  --tooltip-height: 60%;
+  --tooltip-width: 50%;
+  --gap-between-tooltip-to-button: 120%;
+  --button-color: #feb602;
   --tooltip-color: #fff;
   width: var(--width);
   height: var(--height);
   background: var(--button-color);
   position: relative;
-margin-left: 40%;
+  margin-left: 40%;
   text-align: center;
   border-radius: 0.45em;
   font-family: "Arial";
@@ -861,6 +861,14 @@ a{
   visibility: hidden;
   transition: all 0.5s;
 }
+
+.button--pdf {
+/* position: -webkit-sticky; */
+position: fixed;
+top: 90%;
+left: 40%;
+}
+
 
 .text {
   display: flex;
@@ -902,7 +910,7 @@ a{
 }
 
 .button--pdf:hover {
-  background: #feb602;
+  background: #fe0000;
 
 }
 
