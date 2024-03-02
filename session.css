@@ -1,0 +1,18 @@
+.sec{
+	margin-top: 5%;
+	width: 60%;
+	margin-left: 20%;
+}
+.agenda-Card{
+	margin: 10%;
+}
+#agenda-back-title
+{
+	font-size: xx-large;
+}
+
+.surprise-session-over button{
+	margin-left: 50%;
+	background-color: #232323;
+	color: #fff;
+}

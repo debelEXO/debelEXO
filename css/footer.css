@@ -1,0 +1,33 @@
+.sec-06{
+    bottom: 0;
+    height: 38%;
+    width: 100%;
+    
+}
+.sec-06 .footer-container--{
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #232323;
+}
+
+.sec-06 .footer-container-- .footer-map {
+    width: 30%;
+}
+.sec-06 .footer-container-- .footer-map .map-image{
+    width: 90%;
+    height: 90%;
+    padding: 2%;
+}
+
+.sec-06 .footer-container-- .footer-content{
+    width: 50%;
+    height: 50%;
+    margin-top: 2%;
+    
+}
+.footer-content p, a, h4{
+    color: aliceblue;
+    padding: 1%;
+}
