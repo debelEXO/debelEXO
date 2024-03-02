@@ -139,7 +139,8 @@ body {
 .program_card_container {
     display: flex;
     margin-top: 5%;
-
+    width: 95%;
+    gap: 2%;
   
     
   }
@@ -855,11 +856,12 @@ a{
 }
 
 .button--pdf {
-/* position: -webkit-sticky; */
-position: fixed;
-margin-bottom: 50%;
-margin-left: 10%;
-}
+  /* position: -webkit-sticky; */
+  position: fixed;
+  width: 12%;
+  top: 94%;
+  left: 46%;
+  }
 
 
 .text {
@@ -928,9 +930,10 @@ margin-left: 10%;
 }
 
 .surprise-session-page{
-  margin-left: 40%;
-  width: 100%;
+  margin-left: 35%;
+  width: 30%;
   height: 10%;
+  padding: 3%;
   visibility: hidden;
 }
 
@@ -1160,8 +1163,9 @@ height: 50px;
 .button--pdf {
   /* position: -webkit-sticky; */
   position: fixed;
-  top: 40%;
-  left: 10%;
+  width: 28%;
+  top: 95%;
+  left: 31%;
   }
   
 
@@ -1314,9 +1318,9 @@ height: 50px;
 
     .program_card_container {
       display: block;
-      width: 70%;
+      width: 40%;
       margin-top: 5%;
-      margin-left: 15%;
+      margin-left: 30%;
       
     }
 
@@ -1358,6 +1362,13 @@ height: 50px;
       height: 400px;
       transition: 0.2s ease-in-out;
     }
+    .button--pdf {
+      /* position: -webkit-sticky; */
+      position: fixed;
+      width: 17%;
+      top: 95%;
+      left: 41%;
+      }
     
     
 }
