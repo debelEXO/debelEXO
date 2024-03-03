@@ -353,5 +353,10 @@ padding: 2px;
   position: static;
  
   }
-  
+  #csir , #debel {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
+
 
