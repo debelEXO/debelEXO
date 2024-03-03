@@ -257,11 +257,11 @@ th {
     border: 1px solid #ddd !important;
   }
 }
-* {
+/* * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-}
+} */
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
@@ -399,9 +399,7 @@ h6 .small,
 h1,
 .h1,
 h2,
-.h2,
-h3,
-.h3 {
+.h2 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -419,9 +417,7 @@ h3 .small,
 .h3 .small {
   font-size: 65%;
 }
-h4,
-.h4,
-h5,
+
 .h5,
 h6,
 .h6 {

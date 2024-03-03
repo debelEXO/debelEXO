@@ -97,7 +97,7 @@ span.menu{
 	padding: 10px 0;
 	max-width: 0;
 	border-bottom: 2px solid #EEE048;
-    color: #EEE048;
+    /* color: #EEE048; */
 	content: attr(data-hover);
 	-webkit-transition: max-width 0.5s;
 	-moz-transition: max-width 0.5s;
@@ -1564,7 +1564,7 @@ span {
 		font-size: 20px; 		
 	}  
 }
-@media (max-width:480px){
+@media (max-width:550px){
 	
 	span.menu {
 		display: block;
