@@ -177,8 +177,8 @@ padding: 2px;
 
 .container_ex .card .face.face1 .content h3 img{
   font-size: 1em;
-  width: 300px;
-  height: 180px;
+  /* width: 300px; */
+  /* height: 180px; */
   object-fit: cover;
   display: flex;
   color: white;
