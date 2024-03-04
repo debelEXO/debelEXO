@@ -35,10 +35,17 @@
     color: white;
     transition: 0.2s ease-in-out;
   }
+  .home-speaker-card button{
+   opacity: 0;
+   position: relative;
+   height: 200%;
+  }
+  
   
   .home-speaker-img {
     height: 35%;
     width: 20%;
+    /* top: ; */
     object-fit: contain;
     position: absolute;
     filter: blur(7px);
@@ -82,7 +89,8 @@
   .home-speaker-card:hover > .home-speaker-textBox {
     opacity: 0;
   }
-  
+
+
   .home-speaker-card:hover > .home-speaker-img {
     height: 35%;
     width: 20%;
