@@ -278,6 +278,12 @@ display: block;
   transition: 0.2s ease-in-out;
   z-index: 1;
 }
+.home-speaker-card button{
+  opacity: 0;
+  width: 100%;
+  position: relative;
+  height: 200%;
+ }
 
 .home-speaker-textBox {
   opacity: 1;
@@ -303,6 +309,7 @@ display: block;
 .home-speaker-textBox > .home-speaker-price {
   font-size: 17px;
   color: rgb(169, 253, 133);
+  opacity: 0;
 }
 
 .home-speaker-textBox > span {
