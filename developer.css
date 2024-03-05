@@ -1,12 +1,15 @@
+
 .container {
   color: white;
   position: relative;
   font-family: sans-serif;
+  z-index: 11111111111111;
+  
 }
 
 .container::before,
 .container::after {
-  content: "";
+  
   /* background-color: #fab5704c; */
   position: absolute;
 }
@@ -20,7 +23,7 @@
 }
 
 .container::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   height: 3rem;
   top: 8%;
@@ -32,12 +35,16 @@
   width: 300px;
   height: 15.875em;
   padding: 1rem;
+  box-shadow: 0px 0px 20px 1px #8af302ef;
+  animation: breath 5s linear infinite;
   background-color: rgba(255, 255, 255, 0.074);
   border: 1px solid rgba(255, 255, 255, 0.222);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-radius: 0.7rem;
   transition: all ease 0.3s;
+ margin-left: 40%;
+ margin-top: 20%;
 }
 
 .container .box {
@@ -50,7 +57,7 @@
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.1em;
-  color: #232323;
+  color: #c3bd0e;
 }
 
 .container .box div strong {
@@ -58,6 +65,7 @@
   margin-bottom: 1.5rem;
   color: #ffffff;
   font-size: larger;
+  text-align: center;
   
 }
 
@@ -79,10 +87,23 @@
 }
 
 .container .box:hover {
-  box-shadow: 0px 0px 20px 1px #0000008f;
+  box-shadow: 0px 0px 20px 1px #f30202f6;
   border: 1px solid rgba(255, 255, 255, 0.454);
 }
 
+@keyframes breath {
+    0% {
+      opacity: 0.3;
+    }
+  
+    80% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0.3;
+    }
+  }
   
 
   * , *::before , *::after {
@@ -94,179 +115,21 @@
     body{
         font-family: "poppins" , sans-serif ;
         /* background-color: #fff; */
+        min-height: 100vh;
+        background-color: #232323;
     }
     
     ::selection{
         background-color: #0b372dbb;
     }
-    header {
-        position: absolute;
-        z-index: 9999;
-        padding: 0.9rem 0;
-        top: 0;
-        left:0;
-        width: 100%;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1 );
-    }
-    
-    .logo{
-        width: 50px;
-    }
-    
-    header nav{
-       
-        max-width: 18500px;
-        margin: 0 auto;
-        padding: 0 5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    
-    }
-    
-    header ul{
-    
-        display: flex;
-        list-style: none;
-        align-items: center;
-    }
-    
-    header ul a {
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: 300;
-        padding: 1.5rem;
-        font-size: 0.83rem;
-    }
-    .search a {
-    font-size: 1.05rem;
-    padding:  0  3rem;
-    }
-    
-    .hamburger{
-    padding-left: 1.5rem;
-    }
-    
-    .hamburger a{
-        padding: 0%;
-        width: 37px;
-        height: 37px;
-        display: flex;
-        border-radius: 50%;
-        background-color: rgb(115, 115, 115 , 0.7   );
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        justify-content: center;
-        align-items: center;
-    } 
-    
-    .hamburger .bar{
-        position: relative;
-        width: 52%;
-        height: 1.3px;
-        background-color: #fff;
-        border-radius: 2px ;
-    
-    }
-    
-    .hamburger .bar::before , .hamburger .bar::after{
-    content: "";
-    position: absolute;
-    width: 60%;
-    left:50%;
-    transform: translate(-50%);
-    height: 100%;
-    background-color: inherit;
-    border-radius: 2px;
-    }
-    
-    .hamburger .bar::before {
-        top: -4.5px;
-    }
-    .hamburger .bar::after {
-        top: 4.5px;
-    }
-    
-    main{
-        position: relative;
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
-    }
-    
-    
+   
     .parallax{
         pointer-events: none;
         /*  transform: translate(-50% , -50%); */
         transition: 0.45s cubic-bezier(.2 , .49 ,.32 , .99) ; 
     }
     
-    .bg-img{
-        position: absolute;
-        width: 2800px;
-        top: calc(50% - 390px);
-        left: calc(50% + 10px);
-        z-index: 1;
-    }
-    
-    .fog-7{
-        position: absolute;
-        width: 1900px;
-        z-index: 2;
-        top: calc(50% - 100px);
-        left: calc(50% + 300px);
-    }
-    
-    .mountain-10{
-        position: absolute;
-        width:1120px;
-        z-index: 3;
-        top: calc(50% + 40px);
-        left: calc(50% - 600px);
-    }
-    
-    .fog-6{
-        position: absolute;
-        width: 1620px;
-        z-index: 4;
-        top: calc(50% + 85px);
-        left: calc(50% + 10px);
-    }
-    
-    .mountain-9{
-        position: absolute;
-        width: 470px;
-        z-index: 5;
-        top: calc(50% + 113px);
-        left: calc(50% - 457px);
-    }
-    
-    .mountain-8{
-        position: absolute;
-        width: 810px;
-        z-index: 6;
-        top: calc(50% + 86px);
-        left: calc(50% - 202px);
-    }
-    
-    .fog-5{
-        position: absolute;
-        width: 450px;
-        z-index: 7;
-        top: calc(50% + 160px);
-        left: calc(50% + 20px);
-    }
-    
-    .mountain-7{
-        position: absolute;
-        width: 1138px;
-        z-index: 8;
-        top: calc(50% + 123px);
-        left: calc(50% + 505px);
-    }
-    
-    
+   
     .text{
         position: absolute;
         z-index: 9;
@@ -289,117 +152,49 @@
         line-height: 0.88;
     }
     
-    .mountain-6{
-        position: absolute;
-        z-index: 10;
-        top : calc(50% + 60px);
-        left : calc(50% + 590px);
-        width: 498px;
+   /* bg bubles */
+
+   .bg-container {
+    position: relative;
+    width: 100wh;
+    height: 100vh;
+       overflow: hidden;
+   }
+.bubbles{
+    position: relative;
+    display: flex;
+}
+
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc ;
+    margin : 0 4px;
+    border-radius: 50%;
+    box-shadow:  0 0  0 10px #4fc3dc44 ,
+    0 0 50px #4fc3dc , 
+    0 0 100px #4fc3dc;
+
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i) );
+
+}
+
+.bubbles span:nth-child(even){
+    background: #f1ff2d;
+    box-shadow:  0 0  0 10px #ff2d7544 ,
+    0 0 50px #f1ff2d , 
+    0 0 100px #ff2d75;
+}
+@keyframes animate{
+    0%
+    {
+        transform:   translateY(100vh) scale(0);
     }
-    
-    .fog-4{
-        position: absolute;
-        z-index: 11;
-        top : calc(50% + 223px);
-        left : calc(50% - 60px);
-        transform : translate(-50% , -50% );
-        width: 590px;
+    100%{
+        transform:   translateY(-100vh) scale(1);
     }
-    
-    .mountain-5{
-        position: absolute;
-        z-index: 12;
-        top : calc(50% + 250px);
-        left : calc(50% + 530px);
-        width: 725px;
-    }
-    
-    .fog-3  {
-        position: absolute;
-        z-index: 13;
-        top : calc(50% + 110px);
-        left : calc(50% - 15px);
-        width: 1600px;
-    }
-    
-    
-    
-    .mountain-4{
-        position: absolute;
-        z-index: 14;
-        top : calc(50% + 196px);
-        left : calc(50% - 381.5px);
-        width: 780px;
-    }
-    
-    .mountain-3{
-        position: absolute;
-        z-index: 15;
-        top : calc(50% + 196px);
-        left : calc(50% + 750px);
-        width: 500px;
-    }
-    .fog-2  {
-        position: absolute;
-        z-index: 16;
-        top : calc(50% + 510px);
-        left : calc(50% - 15px);
-        width: 1600px;
-    }
-    
-    
-     .mountain-2{
-        position: absolute;
-        z-index: 17;
-        top : calc(50% + 196px);
-        left : calc(50% + 425px);
-        width: 800px;
-    
-    
-    }
-    
-    .mountain-1{
-        position: absolute;
-        z-index: 18;
-        top : calc(50% + 196px);
-        left : calc(50% - 700.5px);
-        width: 530px;
-    }
-    
-    .sun-rays {
-        position: absolute;
-        z-index:19 ;
-        top:0;
-        right: 0;
-        width: 595px;
-        pointer-events: none;
-    }
-    
-    .black-shadow{
-        position: absolute;
-        z-index:20 ;
-        bottom :0;
-        right: 0;
-        width: 100%;
-        pointer-events: none;
-    }
-    
-    .fog-1  {
-        position: absolute;
-        z-index: 21;
-        top : calc(100% - 395px);
-        left : calc(50% - 15px);
-        width: 1600px;
-    }
-    
-    .vignette{
-        position: absolute;
-        z-index: 100;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background : radial-gradient(ellipse at center , rgba(0,0,0,0) 25%  ,rgba(0,0,0,0.7) ) ;
-        pointer-events: none;
-    }
-    
+
+
+}
