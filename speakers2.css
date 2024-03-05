@@ -63,11 +63,22 @@
     gap: 15px;
     transition: 0.2s ease-in-out;
     z-index: 2;
+
+
   }
-  
+
+
+  .home-speaker-textBox span{
+    /* text-shadow: 10px 10px 10px 10px #232323; */
+    color: #232323;
+  }
+
   .home-speaker-textBox > .home-speaker-text {
     font-weight: bold;
     text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(182, 182, 182, 0.678);
+    
   }
   
   .home-speaker-textBox > .home-speaker-head {
@@ -85,6 +96,8 @@
     font-size: 12px;
     color: lightgrey;
     text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.747);
   }
   
   .home-speaker-card:hover > .home-speaker-textBox {
@@ -95,7 +108,7 @@
   .home-speaker-card:hover > .home-speaker-img {
     height: 35%;
     width: 20%;
-    filter: blur(0px);
+    filter: blur(0px );
     animation: anim 3s infinite;
   }
   
