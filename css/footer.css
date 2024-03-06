@@ -30,17 +30,24 @@
 .footer-content p, a, h4{
     color: aliceblue;
     padding: 1%;
+
+
+}
+.cprt{
+    margin-left: 8%;
 }
 
 .footer-container-- img{
     margin: 3.5%;
-    width: 30%;
-    height: 40%;
+    width: 35%;
+    height: 51%;
 }
 .design{
     display: flex;
     flex-direction: column ;
     font-size: smaller;
+
+    padding-top: 5%;
 }
 
 
