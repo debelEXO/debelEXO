@@ -31,7 +31,7 @@ body {
   
   section{
     position: static;
-    /* display: flex; */
+    
     z-index: 0;
     justify-content: center;
     align-items: center;
@@ -135,6 +135,11 @@ body {
     text-align: center;
     
   } 
+
+  .sec-02{
+    display: flex;
+  }
+
 
 .program_card_container {
     display: flex;
