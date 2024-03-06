@@ -1147,6 +1147,7 @@ a{
   width:100%;
   height: max(20rem,50vh);
   border-radius: 5px;
+  height: 60%;
 }
 
 
@@ -1336,6 +1337,7 @@ a{
   width:100%;
   height: max(20rem,50vh);
   border-radius: 5px;
+  height: 60%;
 }
 
 
@@ -1438,7 +1440,7 @@ a{
       display: block;
       width: 40%;
       margin-top: 5%;
-      margin-left: 30%;
+      margin-left: 0%;
       
     }
 
