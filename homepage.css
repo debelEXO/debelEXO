@@ -1316,9 +1316,9 @@ a{
 .button--pdf {
   /* position: -webkit-sticky; */
   position: fixed;
-  width: 78%;
-  top: 75%;
-  left: 21%;
+  width: 36%;
+  top: 92%;
+  left: 19%;
   }
 
 
@@ -1482,13 +1482,7 @@ a{
       height: 400px;
       transition: 0.2s ease-in-out;
     }
-    .button--pdf {
-      /* position: -webkit-sticky; */
-      position: fixed;
-      width: 17%;
-      top: 95%;
-      left: 41%;
-      }
+
     
     
 }
