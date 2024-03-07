@@ -34,7 +34,8 @@
 
 }
 .cprt{
-    margin-left: 9%;
+    margin-left: 0%;
+    width: 90%;
 }
 
 .footer-container-- img{
@@ -98,12 +99,12 @@
       }
     
       
-    @media (max-width:1110px){
+    @media (max-width:1200px){
     
     
       .sec-06 .footer-container-- img {
         width: 30%;
-        height: 30%;
+        height: 35%;
        }
         
         
