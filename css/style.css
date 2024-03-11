@@ -51,8 +51,11 @@ input[type="submit"],.w3agile_contact_right_agileinfo p a,.w3_copy_right p a{
 	background: #fff;
 }
 .navigation{
+	width: 100%;
+	position: fixed;
 	padding:3em 0;
 	background:#000;
+	z-index: 99;
 }
 .logo{
 	float:left;
@@ -1067,6 +1070,15 @@ span {
 	border-radius: 5px 5px 5px 5px;
 }
 
+
+#logoINDexo{
+	width: 200px;
+	height: 65px;
+	margin-left: 1%;
+  }
+
+
+
 /* --//timer-- */
 /*-----start-responsive-design------*/
 @media (max-width:1680px){
@@ -1514,6 +1526,11 @@ span {
 	}  
 }
 @media (max-width:600px){
+	#logoINDexo{
+		width: 150px;
+		height: 56px;
+		margin-left: 1%;
+	  }
 	.navigation-right ul li a {
 		font-size: 14px;
 	}
