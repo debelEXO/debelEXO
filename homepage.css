@@ -949,7 +949,11 @@ a{
   visibility: hidden;
 }
 
-
+#logoINDexo{
+  width: 200px;
+  height: 65px;
+  margin-left: 1%;
+}
 
 
 @media (max-width:780px){
@@ -1158,7 +1162,12 @@ a{
 
 
 @media (max-width:580px){
-
+  #logoINDexo{
+    width: 180px;
+    height: 60px;
+    margin-left: 1%;
+  }
+  
 
   .sec-02{
     width: 100%;

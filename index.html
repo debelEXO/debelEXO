@@ -23,6 +23,7 @@
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="css/jquery-ui.css" type='text/css' />
 <link rel="stylesheet" href="css/smoothbox.css" type='text/css' >
+<link rel="stylesheet" href="css/slider.css" type='text/css' >
 <link rel="stylesheet" href="homepage.css">
 <link rel="stylesheet" href="css/footer.css">
 <!-- NEW FONT -->
@@ -99,7 +100,7 @@
   <div data-vide-bg="video/srix">
 		<div class="center-container">
 			<div class="navigation" style="display: flex ; " >
-        <img id="logoDRDO" style="margin-left:1% ; width: 180px; height: 100px;" src="images/6.png" >
+        <img id="logoINDexo"  src="images/6.png" >
 				<div class="container">
 				
 					<div class="navigation-right">
@@ -188,7 +189,7 @@
 
       <p class=" below-speaker-text ">JOIN US FOR THE MOST AWAITED EVENT IN <b>INDIA</b><br>
         HELD IN THE SPIRIT OF INTELLECTUAL CURIOSITY & PASSION <br>
-        FOR THE ADVANCEMENT OF <b>HUMAN-CENTRIC </b> <br> EXOSKELETON TECHNOLOGIES</p>
+        FOR THE ADVANCEMENT OF <b>HUMAN-CENTRIC  <br> EXOSKELETON</b> TECHNOLOGIES</p>
 
 
       <!-- <p> 
@@ -620,9 +621,9 @@ This is the city where great <b>Nobel laureate C.V. Raman</b> conducted his grou
 <br>
 Also, there are several central government organisations and (PSUs) such as the DRDO, ISRO. Among the PSUs, BEL and BEML are notable entities.<br><br> -->
 
-<img style="width: 100%;" src="./images/vidan-soudha.png" alt="">
+<!-- <img style="width: 100%;" src="./images/vidan-soudha.png" alt=""> -->
 
-<br><h2>Discover Bengaluru’s Highlights </h2> <hr>
+<!-- <br><h2>Discover Bengaluru’s Highlights </h2> <hr> -->
 
     <!-- <b>Bangalore Palace:</b> Step into a world of opulence at the Tudor-style Bangalore Palace. <br> 
 
@@ -639,11 +640,11 @@ Also, there are several central government organisations and (PSUs) such as the 
     <b>Devanahalli Fort:</b> Explore the fascinating ruins of this ancient fort, where history whispers through time. <br>
 
     <b>Bangalore Fort Area:</b> Wander through the oldest parts of the city, each alleyway revealing stories of the past. <br> <br> -->
-    <img style="width: 100%;" src="./images/places.png" alt="">
-<br><h2>Weather</h2>
+    <!-- <img style="width: 100%;" src="./images/places.png" alt=""> -->
+<!-- <br><h2>Weather</h2> -->
 
-Bengaluru’s elevation of over 900 meters ensures a pleasant climate year-round. The weather in Bengaluru is generally mild and sunny throughout the year, with average temperatures ranging from 21°C to 34°C.<br> <br>
-<img style="width: 100%;" src="./images/weather.png" alt="">
+<!-- Bengaluru’s elevation of over 900 meters ensures a pleasant climate year-round. The weather in Bengaluru is generally mild and sunny throughout the year, with average temperatures ranging from 21°C to 34°C.<br> <br> -->
+<!-- <img style="width: 100%;" src="./images/weather.png" alt=""> -->
 
 Whether you’re a tech enthusiast, a food lover, or a culture seeker, Bengaluru invites you to explore its vibrant streets, savour local delicacies, and embrace the perfect blend of tradition and innovation.
 <br>
@@ -655,6 +656,54 @@ Whether you’re a tech enthusiast, a food lover, or a culture seeker, Bengaluru
 </div>
 </section>
 
+<section class="sec-5.5" >
+
+   <!--image slider start-->
+ <div class="slider">
+  <div class="slides">
+    <!--radio buttons start-->
+    <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+    <!--radio buttons end-->
+    <!--slide images start-->
+    <div class="slide first">
+      <img src="images/vidan-soudha.png" alt="">
+    </div>
+    <div class="slide">
+      <img src="images/aloft.webp" alt="">
+    </div>
+    <div class="slide">
+      <img src="images/places.png" alt="">
+    </div>
+    
+    <!--slide images end-->
+    <!--automatic navigation start-->
+    <div class="navigation-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+    </div>
+    <!--automatic navigation end-->
+  </div>
+  <!--manual navigation start-->
+  <div class="navigation-manual" >
+      <!-- style="padding-top: 450px; padding-right: 1652px;" -->
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div>
+  <!--manual navigation end-->
+</div>
+<!--image slider end-->
+
+</section>
+<section class="5.6">
+
+</section>
 
 <section class="sec-06">
   <div class="footer-container--">
@@ -706,11 +755,16 @@ Whether you’re a tech enthusiast, a food lover, or a culture seeker, Bengaluru
 
 
 
-<script>
-  function newTab(e) {
-    e.preventDefault();
-  }
-</script>
+<script type="text/javascript">
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 3){
+      counter = 1;
+    }
+  }, 5000);
+  </script>
             
   <script>
          
@@ -730,16 +784,7 @@ Whether you’re a tech enthusiast, a food lover, or a culture seeker, Bengaluru
   </script>        
 
 
-  <script type="text/javascript">
-    var counter = 1;
-    setInterval(function(){
-      document.getElementById('radio' + counter).checked = true;
-      counter++;
-      if(counter > 4){
-        counter = 1;
-      }
-    }, 3000);
-  </script>
+
   
   <script>
     let prevScrollPos = window.pageYOffset;
