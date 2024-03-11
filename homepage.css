@@ -949,11 +949,7 @@ a{
   visibility: hidden;
 }
 
-#logoINDexo{
-  width: 200px;
-  height: 65px;
-  margin-left: 1%;
-}
+
 
 
 @media (max-width:780px){
@@ -1162,12 +1158,10 @@ a{
 
 
 @media (max-width:580px){
-  #logoINDexo{
-    width: 180px;
-    height: 60px;
-    margin-left: 1%;
-  }
   
+  .bengaluru h2{
+    font-size: 19px;
+  }
 
   .sec-02{
     width: 100%;
