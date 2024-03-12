@@ -54,7 +54,7 @@
     color: white;
     gap: 15%;
     margin-bottom: 5%;
-    
+
     transition: 0.5s ease-in-out;
     animation: shadow-animation 5s linear infinite;
    
@@ -78,6 +78,7 @@
     object-fit: contain;
     position: absolute;
     /* filter: blur(27px); */
+    /* filter: grayscale(100%); */
     transition: 0.5s ease-in-out;
     z-index: 1;
   }
@@ -158,7 +159,7 @@
 
   @keyframes shadow-animation {
     0% { box-shadow: 0 0 20px #8bf30201; } /* Initial opacity 0% */
-    50% { box-shadow: 0 0 20px #8bf30278 } /* Opacity 50% */
+    50% { box-shadow: 0 0 20px rgb(16, 126, 199); } /* Opacity 50% */
     100% { box-shadow: 0 0 20px #8bf30201 } /* Opacity 100% */
 }
 
