@@ -1099,13 +1099,13 @@ a{
 
 
 
-
+/* 
 
 .sec-06{
   margin-top: 5%;
 }
 .button--pdf {
-  /* position: -webkit-sticky; */
+  position: -webkit-sticky;
   position: fixed;
   width: 28%;
   top: 95%;
@@ -1131,7 +1131,7 @@ a{
  .sec-06 .footer-container-- img {
   width: 50px;
   height: 50px;
- }
+ } */
 
  .program_card_content {
   /* filter:  blur(4px); */
