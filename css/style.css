@@ -68,18 +68,19 @@ input[type="submit"],.w3agile_contact_right_agileinfo p a,.w3_copy_right p a{
 	display:inline-block;
 }
 .navigation-right ul li a{
-	color:#fff;
+	color:#000000;
     font-size:1.5em;
     text-decoration: none;
     padding: 10px 0;
+	font-weight: 600;
 	text-transform:uppercase;
 }
 .navigation-right ul li.active a{
-	color:#EEE048;
+	color:rgb(16, 126, 199);
 }
 .navigation {
     padding:1em 0em;
-    background:rgba(0, 0, 0, 0.83);
+    background:rgba(255, 255, 255, 0.83);
 }
 span.menu{
 	display:none;
@@ -99,7 +100,7 @@ span.menu{
 	overflow: hidden;
 	padding: 10px 0;
 	max-width: 0;
-	border-bottom: 2px solid #EEE048;
+	border-bottom: 2px solid rgb(16, 126, 199);
     /* color: #EEE048; */
 	content: attr(data-hover);
 	-webkit-transition: max-width 0.5s;
