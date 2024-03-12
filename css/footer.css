@@ -45,7 +45,7 @@
 }
 .design{
     display: flex;
-    flex-direction: column ;
+    flex-direction: row ;
     font-size: smaller;
 
     padding-top: 5%;
