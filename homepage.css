@@ -146,19 +146,19 @@ body {
     margin-top: 5%;
     width: 95%;
     gap: 2%;
-    scale:0.8 ; opacity: 0;
-    animation: fade-in ease-in-out forwards;
-
- animation-timeline: view() ;
-animation-range: entry;  
+    /* scale:0.8 ; 
+    opacity: 0; */
+    /* animation: fade-in linear forwards;
+    animation-timeline: view() ;
+    animation-range: entry;   */
     
   }
 
-  @keyframes fade-in{
+  /* @keyframes fade-in{
     to{
       scale: 1 ;opacity: 1;
     }
-  }
+  } */
 
 .program_name {
  display: flex;
@@ -344,8 +344,7 @@ display: block;
 }
 
 .home-speaker-card:hover > .home-speaker-img {
-  height: 55%;
-  width: 60%;
+ 
   filter: blur(0px);
   animation: anim 3s infinite;
 }
@@ -966,7 +965,24 @@ a{
 }
 
 
+.bengaluru p{
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 100;
+  color: #232323;
+  text-align: justify;
+}
+.bengaluru h2{
+font-weight: 300;
+}
+#home-joinus{
+  text-align: center;
+  color: #232323;
+  font-size: 42px;
+  font-weight: 200;
+padding-bottom: 30px;
 
+}
 
 @media (max-width:780px){
 
@@ -1040,7 +1056,7 @@ a{
 
 /* home speaker */
 .home-speaker-card {
-  width: 60%;
+  width: 50%;
   height: 400px;
   background: #313131;
   border-radius: 20px;
@@ -1052,6 +1068,12 @@ a{
   margin-bottom: 2%;
   color: white;
   transition: 0.2s ease-in-out;
+}
+
+.home-speaker-img {
+
+  height: 55%;
+  width: 60%;
 }
 
 .home-speaker-card img{
