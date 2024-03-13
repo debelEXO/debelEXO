@@ -1,4 +1,7 @@
-
+.bg-container{
+  background-image: url("./images/dev.png");
+  background-repeat: no-repeat;
+}
 .container {
   color: white;
   position: relative;
@@ -39,7 +42,7 @@
   background-color: rgba(255, 255, 255, 0.074);
   border: 1px solid rgba(255, 255, 255, 0.222);
   -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(7px);
   border-radius: 0.7rem;
   transition: all ease 0.3s;
  margin-left: 40%;
@@ -58,7 +61,7 @@
   border-radius: 10px;
   opacity: 1; /* Initial opacity */
   /* animation: shadow-animation 2s ease infinite; Apply animation */
-  box-shadow: 0px 0px 20px 1px #8af302ef;
+  box-shadow: 0px 0px 20px 11px rgb(19, 126, 199);
   animation: breath 5s linear infinite;
 }
 .container .box {
@@ -71,7 +74,7 @@
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.1em;
-  color: #c3bd0e;
+  color: #232323;
 }
 
 .container .box div strong {
@@ -181,33 +184,33 @@
 
 .bubbles span{
     position: relative;
-    width: 30px;
-    height: 30px;
-    background: #4fc3dc ;
+    width: 5px;
+    height: 5px;
+    background: #fdfdfd ;
     margin : 0 4px;
     border-radius: 50%;
-    box-shadow:  0 0  0 10px #4fc3dc44 ,
-    0 0 50px #4fc3dc , 
-    0 0 100px #4fc3dc;
+    box-shadow:  0 0  0 5px #fdfdfd ,
+    0 0 5px #fdfdfd , 
+    0 0 5px #fdfdfd;
 
     animation: animate 15s linear infinite;
-    animation-duration: calc(125s / var(--i) );
+    animation-duration: calc(295s / var(--i) );
 
 }
 
 .bubbles span:nth-child(even){
-    background: #f1ff2d;
-    box-shadow:  0 0  0 10px #ff2d7544 ,
-    0 0 50px #f1ff2d , 
-    0 0 100px #ff2d75;
+    background: #fdfdfd;
+    box-shadow:  0 0  0 5px #fdfdfd ,
+    0 0 5px #fdfdfd , 
+    0 0 5px #fdfdfd;
 }
 @keyframes animate{
     0%
     {
-        transform:   translateY(100vh) scale(0);
+        transform:   translateY(-100vh) scale(0);
     }
     100%{
-        transform:   translateY(-100vh) scale(1);
+        transform:   translateX(100vh) scale(1);
     }
 
 
