@@ -128,16 +128,48 @@
       @media (max-width:1180px){
 
     
-        .design .design-img img{
+        .design .design-img {
     
-            width: 20%;
-            height: 50%;
+            width: 90%;
+            height: 60%;
         }
               
         
           }
 
+          @media (max-width:1480px){
 
+    
+            .design .design-img {
+        
+                width: 93%;
+                height: 60%;
+            }
+                  
+              }
+
+              @media (max-width:1580px){
+
+    
+                .design .design-img {
+            
+                    width: 95%;
+                    height: 60%;
+                }
+                      
+                
+                  }
+                  @media (max-width:1680px){
+
+    
+                    .design .design-img {
+                
+                        width: 96%;
+                        height: 60%;
+                    }
+                          
+                    
+                      }
 
 /*       
 /*       
