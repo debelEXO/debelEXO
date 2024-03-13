@@ -59,7 +59,7 @@
 .design .design-img img{
 
     
-    width: 30%;
+    width: 24%;
     height: 50%;
 }
 
@@ -131,6 +131,12 @@
         .design .design-img {
     
             width: 90%;
+            height: 60%;
+        }
+
+        .design .design-img img{
+    
+            width: 50%;
             height: 60%;
         }
               
