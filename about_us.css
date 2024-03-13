@@ -238,7 +238,7 @@ form input[type="submit"]:hover {
   
   .organizer .name-title{
     font-size: 250%;
-    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+/*     font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-weight: bolder;
     background:-webkit-linear-gradient(rgba(58, 56, 56, 0.986),rgb(97, 97, 1),rgba(119, 95, 0, 0.815), rgba(141, 92, 1, 0.959));
     background-clip: text;
