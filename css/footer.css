@@ -53,7 +53,7 @@
 .design .design-img{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 92%;
     height: 100%;
 }
 .design .design-img img{
