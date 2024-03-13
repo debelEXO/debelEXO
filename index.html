@@ -17,6 +17,7 @@
     <title>IND EXO INTERNATIONAL WORKSHOP</title>
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
       function hideURLbar(){ window.scrollTo(0,1); } </script>
+      <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
@@ -209,9 +210,9 @@
   </section>
 
 <section class="sec-02  ">
-  <div class="program_card_container  ">
+  <div class="program_card_container animate ">
 
-    <div style="margin-top: 1%; " class="program_card " >
+    <div style="margin-top: 1%; --i:0; " class="program_card  "  >
       <div class="program_name">
       
        <h4> DEFENCE </h4>
@@ -222,7 +223,7 @@
       </div>
     </div>
 
-    <div  style="margin-top: 3%;" class="program_card">
+    <div  style="margin-top: 3%; --i:1;" class="program_card">
       <div class="program_name">
       
        <h4 > R & D  </h3>
@@ -233,8 +234,8 @@
       </div>
     </div>
 
-    <div class="program_card">
-      <div style="text-align: center;" class="program_name">
+    <div style="--i:2;" class="program_card">
+      <div style="text-align: center; " class="program_name">
       
         <h4>REHAB</h4>
 
@@ -244,7 +245,7 @@
       </div>
     </div>
 
-    <div style="margin-top: 2%;" class="program_card">
+    <div style="margin-top: 2%; --i:3;" class="program_card">
       <div class="program_name">
       
         <h4>INDUSTRY</h4>
@@ -264,15 +265,15 @@
 <section class="sec-03">
 
 
-  <div  class="quantity-container">
+  <div  class="quantity-container animate">
     
     <div class="quantity-card">
       <div class="quantity-num">
         <p>20</p>
       </div>
       <div class="quantity-name">
-        <p >renowned </p>
-        <p>speakers</p>
+        <p >renowned  <br>
+        speakers</p>
       </div>
     </div>
 
@@ -281,8 +282,8 @@
         <p>2</p>
       </div>
       <div class="quantity-name">
-        <p>days</p>
-        <p>event</p>
+        <p>days <br>
+        event</p>
       </div>
     </div>
 
@@ -291,8 +292,8 @@
         <p>20</p>
       </div>
       <div class="quantity-name">
-        <p>Interactive</p>
-        <p>lectures</p>
+        <p>Interactive <br>
+        lectures</p>
       </div>
     </div>
 
@@ -301,8 +302,8 @@
         <p>&infin;</p>
       </div>
       <div class="quantity-name">
-        <p>collaboration</p>
-        <p>opportunities</p>
+        <p>collaboration <br>
+        opportunities</p>
       </div>
     </div>
   
@@ -828,25 +829,25 @@ Whether you’re a tech enthusiast, a food lover, or a culture seeker, Bengaluru
 
 <!-- for bootstrap working -->
 <script src="js/bootstrap.js"></script>
-
+<!-- 
 <script>
   //common reveal options to create reveal animations
   ScrollReveal({
-    //reset: true,
+    reset: true,
     distance: '60px',
     duration: 2500,
-    delay: 400
+    delay: 500
   });
 
   //target elements, and specify options to create reveal animations
-  // ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
-  // ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
-  // ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
-  // ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
-  ScrollReveal().reveal('.sec-02 .program_card', { delay: 500, origin: 'right' });
-  // ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
-</script>
-<!-- <script src="js/onscroll.js"></script> -->
+  ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+  ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+  ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+  ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+  ScrollReveal().reveal('.sec-02 .program_card', { delay: 500, origin: 'bottom' });
+  ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+</script> -->
+<script src="js/onScroll.js"></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
 

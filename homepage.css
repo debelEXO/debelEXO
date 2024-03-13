@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+     overflow-x: hidden;
     /* background: linear-gradient(45deg, rgba(0,39,94,1) 0%, rgb(17, 172, 255)100%); */
     /* background: radial-gradient(rgba(0, 0, 255, 0.363),rgba(151, 6, 6, 0.274), #ffffffde); */
     /* background-color: #ffffff; */
@@ -37,6 +38,7 @@ body {
     align-items: center;
     /* padding: 80px 100px; */
     color: #fff;
+   
     /* background: radial-gradient(rgb(122, 60, 151),rgb(69, 56, 75),rgb(53, 146, 138)); */
   }
    
@@ -181,7 +183,7 @@ border-radius: 5px;
 .program_card_content {
   /* filter:  blur(4px); */
   transition: 0.55s;
-  height: 80% ;
+  height: 90% ;
   overflow: hidden;
   /* background-color: linear-gradient(rgb(199, 12, 12) 192) 0%,rgb(0, 0, 0) 20%,rgb(255, 255, 255) 90%,rgb(255, 255, 255) 100%; */
  
@@ -200,7 +202,7 @@ border-radius: 5px;
 
 .program_card_content:hover  {
   
-  box-shadow:0px 20px 51px 10px rgb(4, 9, 65); 
+  /* box-shadow:0px 20px 51px 10px rgb(4, 9, 65);  */
   
   /* color: linear-gradient(blue , black); */
   /* background-color: ; */
@@ -246,6 +248,7 @@ display: block;
   font-size: 10px;
   font-weight: bolder;
   /* text-align: center; */
+  line-height: 30px;
   text-transform: uppercase;
   margin-top: 20%;
 }
@@ -984,6 +987,53 @@ padding-bottom: 30px;
 
 }
 
+
+
+
+
+
+/* onscroll-Reveal  */
+
+
+section .animate{
+  transition: 1s;
+}
+.sec-02 .animate{
+opacity: 0;
+/* transform: scale(.8); */
+
+
+}
+
+.sec-02.show-animate .animate{
+  /* transform: scale(1); */
+  
+  opacity : 1;
+  }
+
+  .program_card{
+    /* filter: blur(5px); */
+    transform: translateX(-100%);
+    transition: 1s;
+    transition-delay: calc(.2s * var(--i));
+  
+  }
+  
+    .sec-02.show-animate .program_card{
+      /* filter: blur(0); */
+    transform: translateX(0);
+  }
+  
+  
+  .sec-03 .animate{
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  .sec-03.show-animate .animate{
+    opacity: 1;
+    transform: scale(1);
+  }
+
 @media (max-width:780px){
 
   .sec-01 .welcome-textbox #text-up {
@@ -1196,7 +1246,10 @@ padding-bottom: 30px;
 
 
 @media (max-width:580px){
-  
+  .bengaluru p{
+    font-size: 11px;
+    line-height: 15px;
+  }
   .bengaluru h2{
     font-size: 19px;
   }
@@ -1384,6 +1437,8 @@ padding-bottom: 30px;
 
       
 }
+
+
  
 
 @media (max-width:1230px){
@@ -1529,3 +1584,22 @@ padding-bottom: 30px;
 }
 
 
+@media (max-width:400px){
+  .quantity-container{
+    display: flex;
+    color: #232323;
+    width: 90%;
+    /* margin-top: 5%; */
+  }
+  .quantity-container .quantity-card .quantity-num p{
+    font-size: 29px;
+
+  }
+  .quantity-container .quantity-card .quantity-name p {
+    font-size:6px;
+    /* text-align: center; */
+    text-transform: uppercase;
+    /* margin-top: -24%; */
+    line-height: 10px;
+  }
+}
