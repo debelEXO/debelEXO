@@ -59,8 +59,8 @@
 .design .design-img img{
 
     
-    width: 100%;
-    height: 60%;
+    width: 30%;
+    height: 50%;
 }
 
 
@@ -123,6 +123,23 @@
     
       }
     
+
+
+      @media (max-width:1180px){
+
+    
+        .design .design-img img{
+    
+            width: 20%;
+            height: 50%;
+        }
+              
+        
+          }
+
+
+
+/*       
 /*       
     @media (max-width:1200px){
     
