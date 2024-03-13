@@ -1,93 +1,4 @@
-/* START OF NAVIGATION PART */
-body {
-    margin: 0;
-    padding: 0;
-    /* background-color: #656b6a; */
-    font-family: Arial, sans-serif;
-  justify-content: center;
-  align-items: center;
-  /* background: #23E3C9; */
-  }
-  
-  .header {
-      text-align: center;
-      color: #fff;
-      top: 0%;
-      padding-top: 50px;
-      
-  }
-  
-  .workshop-header{
-    /* background-color: rgb(255, 255, 255)cec; */
-    color: rgba(158, 156, 156, 0.637);
-    padding: 10px;
-    /* background-color: #444; */
-    padding: 5px;
-    font-size: 5px;
-    text-align: left;
-    z-index: 1000;
-    
-    
-    
-    
-  }
 
-  .pdfbutton button
-  { background-color: transparent;
-    border-radius: 20%;
-    color: #ffd900b7;
-    font-size:20px;
-    cursor: pointer;
-    border-style: groove;
-    font-weight: 500;
-  }
-  
-  
-  
-  .large-header {
-    background-color: #fff;
-    /* padding: 5px; */
-    z-index: 10000;
-    position: fixed;
-    transition: top 0.3s;
-    /* align-items: center; */
-   
-   
-    
-  }
-  
-  
-  
-  article p {
-      text-align: left;
-      color: #333;
-  }
-  
-  article h2 {
-      color: #333;
-      
-  }
-  
-  /* .logo  {
-      margin: 0;
-  } */
-
-
-
-  
-  .logo img {
-      max-height: 100px; /* Adjust the maximum height of the logo as needed */
-      /* margin-left:0; */
-      padding-bottom: 40px;
-      padding-right: 1000px;
-      /* margin-right: 100px; */
-  }
-  
-  .large-header nav li.active a {
-      color: #04bee7; /* Highlight color for the active link */
-  }
-
-  
 
 .organizer p
 {
@@ -96,14 +7,19 @@ body {
     font-family:"sans-serif";
     font-weight: bold;
   
-    color: #fffbfb;
+    color: #232323;
+}
+
+*p
+{
+  margin: 100%;
 }
 .organizer #p1{
-    text-shadow: 2px 2px 2px  #000000;
+    /* text-shadow: 2px 2px 2px  #000000; */
 
 }
 .organizer #p1l{
-    text-shadow: 2px 2px 2px  #000000;
+    /* text-shadow: 2px 2px 2px  #000000; */
     margin-right: 0%;
     width: 110%;
 
@@ -130,16 +46,16 @@ body {
     background: #53f0e3;
 } */
 
-.wrapper {
+.wrapper-aboutus {
     margin: 10%;
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     /* padding-top: 0%; */
     padding: 4% 3% 5% 3%;
     /* background-repeat: no-repeat; */
     
-    background-image: url('./images/debel-drdo.png');
-    
+    background-image: url('./images/debel-drdo.png')  ;
+    /* background-image: ; */
     background-repeat: no-repeat;
     background-position: center center;
     /* background-attachment: fixed; */
@@ -151,12 +67,12 @@ body {
     /* style =" margin-top:0%; font-size:150%;  padding-top:0%; font-family:  'lato' ; font-style: italic; text-align: left;" */
 }
 
-.wrapper header {
+.wrapper-aboutus header {
     font-size: 100%;
     font-weight: 600;
 }
 
-.wrapper form {
+.wrapper-aboutus form {
     margin: 40px 0;
 }
 
@@ -268,12 +184,12 @@ form .pass-txt {
     margin-top: -10px;
 }
 
-.wrapper a {
+.wrapper-aboutus a {
     color: #5372F0;
     text-decoration: none;
 }
 
-.wrapper a:hover {
+.wrapper-aboutus a:hover {
     text-decoration: underline;
 }
 
@@ -324,7 +240,7 @@ form input[type="submit"]:hover {
     font-size: 250%;
     font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
-    background:-webkit-linear-gradient(rgba(0, 0, 0, 0.986),rgb(230, 230, 25),rgba(192, 163, 49, 0.815), rgba(187, 147, 73, 0.959));
+    background:-webkit-linear-gradient(rgba(58, 56, 56, 0.986),rgb(97, 97, 1),rgba(119, 95, 0, 0.815), rgba(141, 92, 1, 0.959));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -352,11 +268,15 @@ form input[type="submit"]:hover {
   
   .right, .left {
     width: 40%; /* Initially, both elements take 50% of the container's width */
-
+    margin-left: 10%;
   }
-  
+  .right p, .left p{
+    /* width: 40%;  */
+    /* Initially, both elements take 50% of the container's width */
+    text-align: left;
+  }
   @media (max-width: 767px) {
-    .wrapper {
+    .wrapper-aboutus {
       flex-direction: column; /* On smaller screens, stack elements vertically */
       justify-content: center;
       text-align: center;
