@@ -79,7 +79,9 @@
     position: absolute;
     /* filter: blur(27px); */
     /* filter: grayscale(100%); */
+    filter: brightness(50%);
     transition: 0.5s ease-in-out;
+   
     z-index: 1;
   }
   
@@ -91,9 +93,9 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-    transition: 5s ease-in-out;
+    transition: 2s ease-in-out;
     z-index: 2;
-    margin-top: 60%;
+    /* margin-top: 60%; */
 
   }
 
@@ -139,6 +141,7 @@
     height: 35%;
     width: 20%;
     filter: blur(0px );
+    filter: brightness(100%);
     animation: anim 3s infinite;
   }
   
