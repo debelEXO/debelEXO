@@ -1079,6 +1079,12 @@ span {
   }
 
 
+  .mob-icon{
+	opacity: 0;
+	position: absolute;
+}
+
+
 
 /* --//timer-- */
 /*-----start-responsive-design------*/
@@ -1528,8 +1534,8 @@ span {
 }
 @media (max-width:600px){
 	#logoINDexo{
-		width: 150px;
-		height: 56px;
+		width: 186px;
+		height: 55px;
 		margin-left: 1%;
 	  }
 	.navigation-right ul li a {
@@ -1583,7 +1589,7 @@ span {
 		font-size: 20px; 		
 	}  
 }
-@media (max-width:550px){
+@media (max-width:580px){
 	
 	span.menu {
 		display: block;
@@ -1591,7 +1597,37 @@ span {
 		width: 100%;
 		position: relative;
 		text-align: center;
-		margin: 0px;
+		
+		
+		/* margin: 0px; */
+		/* margin-left: 100%; */
+	}
+
+	.mob-icon{
+		position: relative;
+		opacity: 1;
+		margin-right: 2%;
+	
+	}
+	.mob-icon img{
+		transition: 1s;
+		transform: rotate(0deg);
+	height: 32px;
+	width: 32px;
+	}
+
+	.onClickEffect img{
+		transition: 1s;
+		transform: rotate(90deg);
+		/* animation: menu-animate 2s ease-in  ; */
+
+	}
+
+	@keyframes menu-animate {
+
+		/* 50% {transform: rotate(270deg);} */
+		to {transform: rotate(0deg);}
+
 	}
 	.navigation-right ul {
 		position: absolute;
