@@ -1411,6 +1411,7 @@ opacity: 0;
 
 .button--pdf {
   /* position: -webkit-sticky; */
+  z-index: 9999;
   position: fixed;
   width: 36%;
   top: 92%;
