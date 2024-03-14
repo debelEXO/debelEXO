@@ -238,6 +238,7 @@ form input[type="submit"]:hover {
   
   .organizer .name-title{
     font-size: 250%;
+    font-family: robo;
 /*     font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-weight: bolder;
     background:-webkit-linear-gradient(rgba(58, 56, 56, 0.986),rgb(97, 97, 1),rgba(119, 95, 0, 0.815), rgba(141, 92, 1, 0.959));
@@ -262,7 +263,7 @@ form input[type="submit"]:hover {
     margin-left: 0%;
     margin-right: 0%;
     display: flex;
-    gap: 10%;
+    gap: 5%;
   }
 
   
@@ -275,6 +276,20 @@ form input[type="submit"]:hover {
     /* Initially, both elements take 50% of the container's width */
     text-align: left;
   }
+
+
+  @media (max-width: 1167px) {
+    .organizer #p1{
+        font-size: 12px;
+    }
+    .organizer #p1l{
+        font-size: 12px;
+    }
+
+}
+
+
+
   @media (max-width: 767px) {
     .wrapper-aboutus {
       flex-direction: column; /* On smaller screens, stack elements vertically */
@@ -297,6 +312,12 @@ form input[type="submit"]:hover {
       width: 100%; /* On smaller screens, make both elements take 100% width */
       text-align: center;
       justify-content: center;
+    }
+    .organizer #p1{
+        font-size: 9px;
+    }
+    .organizer #p1l{
+        font-size: 9px;
     }
 
   }

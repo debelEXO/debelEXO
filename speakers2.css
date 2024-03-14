@@ -219,13 +219,13 @@
 }
 
 .home-speaker-card img{
-  width: 40%;
+  width: 30%;
   height: 45%;
   transition: 0.2s ease-in-out;
 }
 
 .home-speaker-card:hover .home-speaker-img {
-  height: 40%;
+  height: 33%;
   width: 40%;
   filter: blur(0px );
   animation: anim 3s infinite;

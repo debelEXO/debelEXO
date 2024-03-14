@@ -202,7 +202,7 @@ border-radius: 5px;
 
 .program_card_content:hover  {
   
-  /* box-shadow:0px 20px 51px 10px rgb(4, 9, 65);  */
+  box-shadow:0px 2px 20px 1px rgb(4, 9, 65); 
   
   /* color: linear-gradient(blue , black); */
   /* background-color: ; */
@@ -248,7 +248,7 @@ display: block;
   font-size: 10px;
   font-weight: bolder;
   /* text-align: center; */
-  line-height: 30px;
+  line-height: 14px;
   text-transform: uppercase;
   margin-top: 20%;
 }
@@ -850,9 +850,9 @@ padding-left: 5%;
   font-family: "Arial";
   transition: background 0.3s;
 }
-a{
+/* a{
   width: 100%;
-}
+} */
 
 .button--pdf::before {
   position: absolute;
@@ -1246,6 +1246,8 @@ opacity: 0;
 
 
 @media (max-width:580px){
+
+
   .bengaluru p{
     font-size: 11px;
     line-height: 15px;
