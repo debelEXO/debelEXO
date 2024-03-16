@@ -248,7 +248,7 @@ display: block;
   font-size: 10px;
   font-weight: bolder;
   /* text-align: center; */
-  line-height: 14px;
+  line-height: 324%;
   text-transform: uppercase;
   margin-top: 20%;
 }
