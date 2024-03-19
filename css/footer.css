@@ -154,6 +154,18 @@
         
           }
 
+     @media (min-width:950px){
+
+            .design .design-img img{
+
+                width: 30%;
+                height: 100%;
+            }
+            
+            
+            
+              }
+
 /* 
       @media (max-width:1180px){
 
