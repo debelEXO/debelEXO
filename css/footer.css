@@ -41,7 +41,7 @@
 .footer-container-- img{
     margin: 3.5%;
     width: 35%;
-    height: 51%;
+    /* height: 51%; */
 }
 .design{
     display: flex;
@@ -49,18 +49,28 @@
     font-size: smaller;
     width: 100%;
     padding-top: 5%;
+    height: 50%;
 }
 .design .design-img{
     display: flex;
     flex-direction: row;
-    width: 92%;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    align-items: center;
 }
-.design .design-img img{
-
+ .design .design-img img{
     
+ }
+
+/*     
     width: 24%;
-    height: 51%;
+    height: 51%; */
+    /* aspect-ratio: 1; 
+} */
+
+#footer-img {
+    height:50%;
+    width: 50%;
 }
 
 /* this is for making nav logo vanish in mobile view, giving it here can change in all place */
@@ -131,7 +141,20 @@
       }
     
 
+      @media (max-width:950px){
 
+        .design .design-img{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 50%;
+        }
+        
+        
+        
+          }
+
+/* 
       @media (max-width:1180px){
 
     
@@ -182,7 +205,7 @@
                     }
                           
                     
-                      }
+                      } */
 
 /*       
 /*       
