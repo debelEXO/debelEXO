@@ -263,7 +263,7 @@ form input[type="submit"]:hover {
     margin-left: 0%;
     margin-right: 0%;
     display: flex;
-    gap: 5%;
+/*     gap: 5%; */
   }
 
   
