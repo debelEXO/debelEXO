@@ -1034,6 +1034,22 @@ opacity: 0;
     transform: scale(1);
   }
 
+
+   
+
+@media (max-width:1230px){
+
+  .program_card_container {
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    /* margin-left: 13%; */
+    gap: 1%;
+    height: 30%;
+    
+  }
+}
+
 @media (max-width:780px){
 
   .sec-01 .welcome-textbox #text-up {
@@ -1442,20 +1458,7 @@ opacity: 0;
 }
 
 
- 
 
-@media (max-width:1230px){
-
-  .program_card_container {
-    display: flex;
-    width: 100%;
-    margin-top: 5%;
-    /* margin-left: 13%; */
-    gap: 1%;
-    height: 30%;
-    
-  }
-}
 
 
 
