@@ -1589,7 +1589,7 @@ span {
 		font-size: 20px; 		
 	}  
 }
-@media (max-width:580px){
+@media (max-width:980px){
 	
 	span.menu {
 		display: block;
